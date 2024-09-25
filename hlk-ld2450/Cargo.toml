@@ -1,0 +1,22 @@
+[package]
+edition = "2021"
+name = "hlk-ld2450"
+version = "0.0.1-alpha.0"
+authors = ["Riley Williams <riley@rileyw.dev>"]
+license = "MIT OR Apache-2.0"
+resolver = "2"
+description = "An embedded-hal driver for the HLK-LD2450 radar module"
+readme = "../README.md"
+repository = "https://github.com/riley-williams/hlk-ld2450"
+keywords = ["no_std", "embedded", "async"]
+
+[dependencies]
+embedded-io-async = "0.6.1"
+heapless = "0.8"
+log = "0.4"
+defmt = "0.3"
+
+
+[dev-dependencies]
+tokio = { version = "1.40.0", features = ["full"] }
+tokio-test = "0.4.4"
